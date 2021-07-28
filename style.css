@@ -69,7 +69,7 @@ nav {
  
 .img-container {
     display: flex;
-    width: 1000px;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -129,4 +129,34 @@ nav {
 .copyright h5 {
     text-align: left;
     margin: 20px;
+}
+
+@media only screen and (max-width:1000px) {
+    #mission {
+        width: 500px;
+        line-height: 1.5em;
+    }
+    
+    #featured {
+        width: 500px;
+    }
+
+    #locations {
+        width: 500px;
+        height: auto;
+        background-position-x: 60%;
+    }
+
+    .location-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #locations h2 {
+        background-color: black;
+    }
+
+    .box {
+        margin: 20px;
+    }
 }
